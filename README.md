@@ -35,11 +35,7 @@ _Note 2:_ If you're upgrading from version 0.0.8 or lower of Radiation to v 0.1.
 ### Basic Usage 
 
 #### Running Radiation
-As of Radiation v 0.3.x, running Radiation is still a little clunky.
-
-From anywhere in your box you can run `cd ~/radiation; ruby bin/runner.rb`. You'll then be greeted by the main Radiation menu. 
-
-**See section below on adding a `radiation` function to your `.bash_profile` if you want to make usage significantly easier.**
+Running Radiation is super easy. Just type ```radiation``` at the command line and you're good to go!
 
 #### Creating a New Blog Post 
 From the main menu, you can choose option `n` to create a new post. 
@@ -64,27 +60,6 @@ Once you've saved your post in your text editor and quit your text editor, you'l
 To edit posts you can use the 'e' option in the menu. Alternatively, you can go into `~/radiation_posts` and edit the post you want to edit in whatever text editor you like. 
 
 When you're done editing, run Radiation and run the publish command from the menu. 
-
-### Making Radiation Easier to Run by Editing Your Bash Profile
-
-As you may have noticed, entering `cd ~/radiation; ruby bin/runner.rb` every time you want to run Radiation sucks. So let's make it so you can just type `radiation` and hit enter from any directory and Radiation will launch. 
-
-To add a radiation function to your bash_profile, simply use the `b - Add radiation function to your bash_profile` option in the main menu (if you don't see that option, see below). It will ask you to confirm. 
-
-**NOTE: You only want to do this once! Even if you remove radiation this function will still be in your bash_profile.**
-
-FYI This menu option adds the following function to the end of your bash_profile:
-
-```
-function radiation {
-    cwd=$(pwd)
-    cd ~/radiation
-    ruby bin/runner.rb
-    cd $cwd
-}
-```
-
-If you do not see option `b - Add radiation function to your bash_profile` in your Radiation main menu, that means you already have a function called `radiation` in your bash_profile. You most likely do NOT want to add another one, but Radiation will let you if you confirm. Either way, at this point you'll want to see what's going on in your bash_profile by running `vim ~/.bash_profile`.
 
 ### Editing User Settings
 
