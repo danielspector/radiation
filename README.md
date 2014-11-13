@@ -22,7 +22,7 @@ git clone https://github.com/sts10/radiation.git ~/radiation; cd ~/radiation
 
 then hit enter.
 
-**Step 2:** Now paste or type this into your terminal `ruby bin/install.rb` and hit enter. This may take a second. 
+**Step 2:** Now paste or type this into your terminal `bash bin/install.sh` and hit enter. This may take a second. 
 
 **Step 3:** Now paste or type `ruby bin/runner.rb` and hit enter. You should be asked if you'd like to setup Radiation. Answer in the affirmative!
 
